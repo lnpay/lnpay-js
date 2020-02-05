@@ -40,7 +40,7 @@ window.console.log = this.console.log || function() {};
  */
 (function(root) {
   root.LNPay = root.LNPay || {};
-  root.LNPay.VERSION = "js0.1.alpha";
+  root.LNPay.VERSION = "js0.1.0";
 }(this));
 
 /**

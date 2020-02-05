@@ -2,7 +2,7 @@
   "name": "lnpay-js",
   "preferGlobal": true,
   "analyze": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Tim Kijewski <bootstrapbandit7@gmail.com>",
   "description": "LNPay JavaScript SDK",
   "repository": {
