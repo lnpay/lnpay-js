@@ -123,9 +123,6 @@ gulp.task('example-upgrade-tag', function(){
     let v = pkg.version;
     let file = 'example/*.html';
 
-    return gulp.src([file])
-        .pipe(replace(/lnpay-js-([\d.]+)\.js/g, 'lnpay-js-' + v + '.js'))
-        .pipe(gulp.dest('example'));
 });
 
 // continous integration tasks
@@ -174,9 +171,9 @@ gulp.task('build', gulp.series('clean', function (cb) {
     let pkg = require('./package.json');
 
     return gulp.src('./src/*.js')
-        .pipe(concat(pkg.name + '-' + pkg.version + '.js'))
+        .pipe(concat(pkg.name.replace('-js','') + '.js'))
         .pipe(gulp.dest('./dist'))
-        .pipe(rename(pkg.name + '-' + pkg.version + '.min.js'))
+        .pipe(rename(pkg.name.replace('-js','') + '.min.js'))
         .pipe(uglify())
         .pipe(size({showFiles:true}))
         .pipe(gulp.dest('./dist'));

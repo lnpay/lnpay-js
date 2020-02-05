@@ -18,7 +18,7 @@ Or if you're not into package management, just [download a ZIP](https://github.c
 First, include the script located on the `dist` folder or load it from unpkg.
 
 ```html
-<script src="https://unpkg.com/lnpay-js@0.1.0/dist/lnpay-js-0.1.0.min.js"></script>
+<script src="https://unpkg.com/lnpay-js@^0.1/dist/lnpay.min.js"></script>
 ```
 
 Now, you need to instantiate it with a Public API Key from [LNPay.co](https://lnpay.co)
