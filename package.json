@@ -1,0 +1,54 @@
+{
+  "name": "lnpay-js",
+  "preferGlobal": true,
+  "analyze": false,
+  "version": "0.1.0",
+  "author": "Tim Kijewski <bootstrapbandit7@gmail.com>",
+  "description": "LNPay JavaScript SDK",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/lnpay/lnpay-js.git"
+  },
+  "keywords": [
+    "sdk",
+    "boilerplate",
+    "api",
+    "javascript"
+  ],
+  "dependencies": {
+    "colors": "*",
+    "dotenv": "^8.2.0",
+    "got": "^10.3.0",
+    "gulp": "^4.0.2",
+    "gulp-bump": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-debug": "*",
+    "gulp-jshint": "*",
+    "gulp-notify": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-sass": "*",
+    "gulp-size": "*",
+    "gulp-task-listing": "*",
+    "gulp-uglify": "*",
+    "js-yaml": "*",
+    "jshint": "*",
+    "jshint-stylish": "*",
+    "karma": "*",
+    "karma-coverage": "^2.0.1",
+    "karma-jasmine": "*",
+    "karma-junit-reporter": "*",
+    "run-sequence": "*",
+    "sys": "*",
+    "xml2js": "*",
+    "yargs": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^3.1.0"
+  }
+}

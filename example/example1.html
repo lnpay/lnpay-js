@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This is a very basic example -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 30px
+      }
+    </style>
+    <title>lnpay-js</title>
+    <script src="../dist/lnpay-js-0.1.0.js"></script>
+    <script>
+        /**
+         * Initialize the SDK with our keys
+         */
+        let publicApiKey = '';
+        let walletAccessKey = '';
+        LNPay.Initialize(publicApiKey);
+
+        /**
+         * Create a wallet
+         * @see https://docs.lnpay.co/wallet/create-wallet
+         */
+
+        /*
+          LNPay.createWallet({"user_label":"My wallet"},function(result) {
+              console.log(result);
+            }
+          );
+        */
+
+        /**
+         * Get wallet info / balance
+         * @see https://docs.lnpay.co/wallet/get-balance
+         */
+
+        /*
+          let myWallet = new LNPayWallet(walletAccessKey);
+          myWallet.getInfo(function(result) {
+              console.log(result);
+            }
+          );
+        */
+
+        /**
+         * Generate an invoice from wallet
+         * @see https://docs.lnpay.co/wallet/generate-invoice
+         */
+
+        /*
+          let invoiceParams = {"num_satoshis":2,"memo":"Tester"};
+          let myWallet = new LNPayWallet(walletAccessKey);
+          myWallet.createInvoice(invoiceParams,function(result) {
+              console.log(result);
+            }
+          );
+         */
+
+        /**
+         * Pay Invoice
+         * @see https://docs.lnpay.co/wallet/pay-invoice
+         */
+
+        /*
+          let invoiceParams = {"payment_request":"lnbc111...."};
+          let myWallet = new LNPayWallet(walletAccessKey);
+          myWallet.payInvoice(invoiceParams,function(result) {
+              console.log(result);
+            }
+          );
+         */
+
+        /**
+         * Transfer between LNPay wallets
+         * @see https://docs.lnpay.co/wallet/transfers-between-wallets
+         */
+
+        /*
+          let transferParams = {"dest_wallet_id":"wa_xxxxx","num_satoshis":22,"memo":"Transfer Memo"};
+          let myWallet = new LNPayWallet(walletAccessKey);
+          myWallet.internalTransfer(transferParams,function(result) {
+              console.log(result);
+            }
+          );
+         */
+
+        /**
+         * Get wallet transactions (these are only settled transactions)
+         * @see https://docs.lnpay.co/wallet/get-transactions
+         */
+
+        /*
+          let queryParams = {}; //pagination, searching eventually
+          let myWallet = new LNPayWallet(walletAccessKey);
+          myWallet.getTransactions(queryParams,function(result) {
+              console.log(result);
+            }
+          );
+         */
+
+        /**
+         * Get an LNURL withdraw link
+         * @see https://docs.lnpay.co/wallet/lnurl-withdraw
+         */
+
+        /*
+          let lnurlParams = {"num_satoshis":12,"memo":"SatsBack!"};
+          let myWallet = new LNPayWallet(walletAccessKey);
+          myWallet.getLnurl(lnurlParams,function(result) {
+              console.log(result);
+            }
+          );
+         */
+
+        /**
+         * Check if LN Invoice is settled or not
+         * @see https://docs.lnpay.co/lntx/get-invoice-status
+         */
+
+        /*
+          let lntx_id = "lntx_Mxxxxx";
+          let lntx = new LNPayLnTx(lntx_id);
+          lntx.getInfo(function(result) {
+              console.log(result);
+            }
+          );
+         */
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Uncomment some of the JS and look in the console.</p>
+    <p>Find out more at <a href="https://github.com/lnpay/lnpay-js">github.com/lnpay/lnpay-js</a></p>
+  </body>
+</html>
